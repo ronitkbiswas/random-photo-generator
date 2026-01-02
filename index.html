@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Photo Generator in JS</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/files/icon.jpg" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body
+    class="bg-gradient-to-br from-gray-900 via-gray-800 to-black min-h-screen flex flex-col items-center justify-center text-center text-white font-sans"
+  >
+    <p
+      class="pageHeading text-3xl font-extrabold text-yellow-400 drop-shadow-lg mb-3"
+    >
+      [ Random Photo Generator in JS ]
+    </p>
+
+    <p class="text-gray-200 font-[tahoma] text-sm mb-6">
+      Click a button and generate a random photo..
+    </p>
+
+    <button
+      type="button"
+      id="btn"
+      onclick="show(),prevImg(),closeImg(),nextImg(),clickCounter()"
+      class="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold rounded-lg shadow-lg transform transition-all duration-300 hover:scale-110 hover:shadow-[0_0_20px_rgba(99,102,241,0.7)] active:scale-95 mb-8"
+    >
+      Generate Photo ✨
+    </button>
+
+    <div
+      id="frame"
+      class="class1 bg-gray-800/70 p-5 rounded-2xl shadow-2xl w-[420px] flex flex-col items-center backdrop-blur-sm transition-all duration-500 hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]"
+    >
+      <img
+        data-src="https://picsum.photos/400/300"
+        alt=""
+        class="rounded-xl shadow-lg mb-4 border border-gray-700 hover:opacity-90 transition duration-300"
+      />
+    </div>
+
+    <p id="c" class="mt-6 text-sm text-gray-400 italic"></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>

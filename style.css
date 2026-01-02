@@ -1,0 +1,28 @@
+body {
+  background-color:#000;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+/* .pageHeading {
+  color: white;
+  font-size: larger;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+} */
+/* .pageHeading:hover {
+  color: aqua;
+  /* font-size: small; */
+} */
+#btn {
+  padding: 5px 30px;
+  border: 1px 5px;
+  font-size: 15px;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
+.class1 {
+  max-height: 0px;
+  transition: max-height 1s;
+  overflow: hidden;
+}
